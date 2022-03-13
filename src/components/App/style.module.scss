@@ -1,0 +1,31 @@
+@import "../../stylesheets/style";
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  min-width: 500px;
+  gap: 64px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.navLinks {
+  display: flex;
+  z-index: 100;
+  height: max-content;
+  a {
+    //   color: $link-color;
+    color: blue;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 8px 16px;
+  }
+  .active {
+    //   color: $link-color-active;
+    color: $hero-background-right;
+    //   background-color: $bg-light;
+    background-color: $hero-background-right;
+  }
+}

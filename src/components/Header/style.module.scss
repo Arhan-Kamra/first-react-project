@@ -1,0 +1,44 @@
+@import "../../stylesheets/style";
+
+.container {
+  width: 100%;
+  min-height: 90vh;
+
+  //   background-color: $hero-background-left;
+  background-color: #ccc;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 45%;
+    // background-color: $hero-background-right;
+    background-color: #333;
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 10;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  .logo {
+  }
+}
+
+.intro {
+  p {
+  }
+  h1 {
+  }
+  h2 {
+  }
+}
+
+.bioLinks {
+  img {
+  }
+}
